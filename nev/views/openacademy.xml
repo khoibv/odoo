@@ -164,7 +164,7 @@
                                 <div class="oe_dropdown_kanban">
                                     <!-- dropdown menu -->
                                     <div class="oe_dropdown_toggle">
-                                        <i class="fa fa-bars fa-lg"/>
+                                        <i class="fa fa-bars fa-lg" aria-label="Bar"/>
                                         <ul class="oe_dropdown_menu">
                                             <li>
                                                 <a type="delete">Delete</a>
