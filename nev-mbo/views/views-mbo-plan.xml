@@ -4,7 +4,7 @@
 
         <!-- window action -->
         <record model="ir.actions.act_window" id="mbo_view_mbo_plan_action">
-            <field name="name">my_module Mbo plan</field>
+            <field name="name">MBO plan</field>
             <field name="res_model">nev.mbo.mbo_plan</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -14,13 +14,12 @@
         </record>
 
 
-        <!-- mbo_plan tree view -->
+        <!-- TREE -->
         <record model="ir.ui.view" id="mbo_view_mbo_plan_tree_view">
             <field name="name">nev.mbo.mbo_plan.tree</field>
             <field name="model">nev.mbo.mbo_plan</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="no"/>
                     <field name="name"/>
                     <field name="status"/>
                 </tree>
@@ -28,7 +27,7 @@
         </record>
 
 
-        <!-- mbo_plan form view -->
+        <!-- FORM -->
         <record model="ir.ui.view" id="mbo_view_mbo_plan_form_view">
             <field name="name">nev.mbo.mbo_plan.form</field>
             <field name="model">nev.mbo.mbo_plan</field>
@@ -36,7 +35,6 @@
                 <form string="MBO plan">
                     <sheet>
                         <group>
-                            <field name="no"/>
                             <field name="name"/>
                             <field name="status"/>
                         </group>

@@ -28,7 +28,8 @@
         'security/ir.model.access.csv',
         'views/menu.xml',
         'views/views-mbo-plan.xml',
-        'views/views.xml',
+        'views/views-mbo.xml',
+        'views/views-objective.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
