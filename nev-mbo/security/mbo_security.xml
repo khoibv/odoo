@@ -1,0 +1,9 @@
+<odoo>
+<record id="group_manager" model="res.groups">
+    <field name="name">MBO Manager</field>
+</record>
+
+<record id="group_user" model="res.groups">
+    <field name="name">MBO User</field>
+</record>
+</odoo>

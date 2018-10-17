@@ -1,0 +1,8 @@
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+    <menuitem name="My MBO" id="mbo_menu_root"/>
+
+  </data>
+</odoo>

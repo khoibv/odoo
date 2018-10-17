@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+        <record id="object0" model="nev.mbo.mbo">
+            <field name="user_mbo">Nguyen Van A</field>
+            <field name="content_mbo">Thi chung chi tieng Nhat N3</field>
+            <field name="duration_mbo">2018-01-01</field>
+            <field name="action_plan_mbo">Hoc moi ngay 1h</field>
+            <field name="employee_result_by_text_mbo">a</field>
+        </record>
+
+        <record id="mbo_plan" model="nev.mbo.mbo_plan">
+            <field name="no">1</field>
+            <field name="mbo_plan_name">MBO of 2017</field>
+            <field name="status">Finished</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="mbo_view_mbo_objective_list">
+      <field name="name">MBO Objective</field>
+      <field name="model">nev.mbo.objective</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="duration_mbo"/>
+          <field name="action_plan_mbo"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="mbo_view_mbo_objective_action_window">
+      <field name="name">MBO Objective</field>
+      <field name="res_model">nev.mbo.objective</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- mbo form view -->
+    <record model="ir.ui.view" id="mbo_view_mbo_form_view">
+      <field name="name">nev.mbo.mbo.form</field>
+      <field name="model">nev.mbo.mbo</field>
+      <field name="arch" type="xml">
+        <form string="MBO Objective">
+          <sheet>
+            <group>
+              <field name="user_mbo"/>
+            </group>
+            <notebook>
+              <page string="MBO List Object">
+                <field name="objective_ids">
+                  <tree string="Registered Objective MBO">
+                    <field name="name"/>
+                    <field name="duration_mbo"/>
+                    <field name="evaluation_criteria_mbo"/>
+                    <field name="employee_result_by_percent_mbo"/>
+                    <field name="employee_result_by_text_mbo"/>
+                    <field name="manager_result_by_percent_mbo"/>
+                    <field name="manager_result_by_text_mbo"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="About">
+                This is an description about Objective MBO
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- menu categories -->
+    <menuitem name="List MBO Objective" id="mbo_menu_2_list" parent="mbo_menu_root" action="mbo_view_mbo_objective_action_window"/>
+    <!--<menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"-->
+    <!--action="my_module.action_window"/>-->
+  </data>
+</odoo>
