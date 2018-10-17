@@ -237,10 +237,10 @@
 
 
         <!-- top level menu: no parent -->
-        <menuitem id="main_nev_menu" name="Open Academy"/>
+        <menuitem id="main_nev_menu" name="NEV Open Academy"/>
         <!-- A first level in the left side menu is needed
              before using action= attribute -->
-        <menuitem id="nev_menu" name="Open Academy"
+        <menuitem id="nev_menu" name="NEV Open Academy"
                   parent="main_nev_menu"/>
         <!-- the following menuitem should appear *after*
              its parent nev_menu and *after* its

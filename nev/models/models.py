@@ -9,8 +9,8 @@ class Course(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
-    responsible_id = fields.Many2one('res.users', ondelete='set null', string="Responsible", index=True)
-    session_ids = fields.One2many('nev.session', 'course_id', string="Sessions")
+    responsible_id = fields.Many2one(comodel_name='res.users', ondelete='set null', string="Responsible", index=True)
+    session_ids = fields.One2many(comodel_name='nev.session', inverse_name='course_id', string="Sessions")
 
     @api.multi
     def copy(self, default=None):
