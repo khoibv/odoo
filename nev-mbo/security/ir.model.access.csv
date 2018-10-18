@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_nev_mbo_mbo,nev.mbo.mbo,model_nev_mbo_mbo,,1,1,1,1
+access_nev_mbo_objective,nev.mbo.objective,model_nev_mbo_objective,,1,1,1,1
 access_nev_mbo_mbo_plan1,nev.mbo.mbo_plan,model_nev_mbo_mbo_plan,group_manager,1,1,1,1
 access_nev_mbo_mbo_plan2,nev.mbo.mbo_plan,model_nev_mbo_mbo_plan,group_user,0,0,0,0

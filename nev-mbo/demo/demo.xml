@@ -9,11 +9,10 @@
             <!--<field name="employee_result_by_text_mbo">a</field>-->
         <!--</record>-->
 
-        <!--<record id="mbo_plan" model="nev.mbo.mbo_plan">-->
-            <!--<field name="no">1</field>-->
-            <!--<field name="mbo_plan_name">MBO of 2017</field>-->
-            <!--<field name="status">Finished</field>-->
-        <!--</record>-->
+        <record id="mbo_plan" model="nev.mbo.mbo_plan">
+            <field name="name">MBO of 2018</field>
+            <field name="status">updating</field>
+        </record>
 
     </data>
 </odoo>
